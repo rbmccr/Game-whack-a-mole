@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 600px;
+  height: 600px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  cursor: url(/images/hammer-up-small.png), pointer;
+  margin: 5px;
+}
+
+.container:active {
+  cursor: url(/images/hammer-small.png), pointer;
+}
+
+.box {
+  border: 1px solid black;
+}
+
+.mole {
+  background: url(/images/mole.jpg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

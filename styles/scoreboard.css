@@ -1,5 +1,4 @@
 #scoreboard {
-  margin: 0 auto;
   height: 250px;
   width: 300px;
   display: flex;
@@ -11,6 +10,7 @@
 
 #scoreboard h1 {
   flex-basis: 100%;
+  height: 65px;
   text-align: center;
   padding: 5px;
   border-bottom: 1px solid white;

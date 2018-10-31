@@ -55,6 +55,9 @@ function pauseGame() {
 //remove grid boxes in gameplay container
 function resetGame() {
   container.innerHTML = "";
+  totalClicksDiv.innerHTML = "";
+  hitsDiv.innerHTML = "";
+  accuracyDiv.innerHTML = "";
   clearInterval(intervalID);
   classToggle();
 }
