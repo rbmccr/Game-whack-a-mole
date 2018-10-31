@@ -1,0 +1,22 @@
+#scoreboard {
+  margin: 0 auto;
+  height: 250px;
+  width: 300px;
+  display: flex;
+  flex-flow: row wrap;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+#scoreboard h1 {
+  flex-basis: 100%;
+  text-align: center;
+  padding: 5px;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+}
+
+#scoreboard div {
+  flex-basis: 100%;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Click a Mole</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="scoreboard.css">
+</head>
+<body>
+  Define the grid size
+  <select id="grid">
+    <option value="3">3x3</option>
+    <option value="4">4x4</option>
+    <option value="5">5x5</option>
+    <option value="6">6x6</option>
+    <option value="7">7x7</option>
+  </select>
+  Choose a playstyle
+  <select id="playstyle">
+    <option value="2.00">Easy</option>
+    <option value="1.50">Getting there</option>
+    <option value="1.00">Hmm...</option>
+    <option value="0.75">Difficult</option>
+    <option value="0.25">Impossible</option>
+    <option value="0.10">Don't Try It</option>
+  </select>
+  <button onclick="buildTiles()">Build Grid</button>
+  <button onclick="startGame()">Start Game</button>
+  <button onclick="pauseGame()">Pause</button>
+  <button onclick="resetGame()">Reset Game</button>
+
+  <div id="container" class="container"></div>
+  <div id="scoreboard">
+    <h1>Scoreboard</h1>
+    <div id="totalClicks"></div>
+    <div id="hits"></div>
+    <div id="accuracy"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="mapbuilder.js"></script>
+  <script src="timer.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
