@@ -1,24 +1,113 @@
-html, body {
-  height: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.master {
-  display: flex;
-  height: inherit;
+body {
+  background-color: rgb(167, 141, 105);
 }
 
-.sidebar {
-  flex-basis: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
+@media only screen and (max-width: 320px) {
 
-.gameplay {
-  flex-basis: calc(100% - 200px);
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: center; 
-  padding: 15px;
+  html, body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  nav {
+    height: 40px;
+    background-color: beige;
+    border-bottom: 1px solid brown;
+    margin-bottom: 2.5px;
+  }
+
+  nav ul {
+    height: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  nav li {
+    display: inline-block;
+  }
+
+  nav li:nth-child(2) {
+    font-weight: bold;
+    font-size: 1.25em;
+  }
+
+  .master {
+    margin: 0 auto;
+    width: 320px;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5px;
+  }
+
+  /* sidebar and sidebar items */
+  .sidebar {
+    flex-basis: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .sidebar--label {
+    flex-basis: 50%;
+    order: -1;
+    text-align: center;
+  }
+
+  select {
+    flex-basis: 46%;
+    height: 22px;
+    margin: 5px;
+  }
+
+  /* gameplay and gameplay items */
+  .gameplay {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    flex-basis: 320px;
+  }
+
+  .container {
+    flex-basis: 100%;
+    height: 300px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  button {
+    flex-basis: 21%;
+    margin: 5px auto;
+  }
+
+  #scoreboard {
+    height: 100px;
+    width: 300px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    background-color: beige;
+    border: 1px solid brown;
+    font-size: 13px;
+  }
+
+  #scoreboard h1 {
+    flex-basis: 100%;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid white;
+  }
+
+  #scoreboard div {
+    text-align: center;
+    flex-basis: 33%;
+  }
+
 }

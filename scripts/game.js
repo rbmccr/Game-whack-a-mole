@@ -40,7 +40,7 @@ container.addEventListener("click", (e) => {
   }
   totalClicksDiv.innerHTML = `Total Clicks: ${totalClicks}`;
   hitsDiv.innerHTML = `Total Hits: ${hits}`;
-  accuracyDiv.innerHTML = `Accuracy: ${((hits / totalClicks) * 100).toFixed(1)}%`;
+  accuracyDiv.innerHTML = `Accuracy: ${((hits / totalClicks) * 100).toFixed(0)}%`;
 });
 
 function pauseGame() {

@@ -12,9 +12,16 @@
   <link rel="stylesheet" href="styles/gameplay-styles.css">
 </head>
 <body>
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>Click a Mole!</li>
+      <li>About</li>
+    </ul>
+  </nav>
   <div class="master">
     <div class="sidebar">
-      Define the grid size
+      <div class="sidebar--label">Define grid size:</div>
       <select id="grid">
         <option value="3">3x3</option>
         <option value="4">4x4</option>
@@ -23,7 +30,7 @@
         <option value="7">7x7</option>
         <option value="10">10x10</option>
       </select>
-      Choose a playstyle
+      <div class="sidebar--label">Choose mode:</div>
       <select id="playstyle">
         <option value="2.00">Easy</option>
         <option value="1.50">Getting there</option>
@@ -47,6 +54,7 @@
       </div>
     </div>
   </div>
+  <div id="about"></div>
 
   <script src="scripts/script.js"></script>
   <script src="scripts/mapbuilder.js"></script>
